@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Daily Romantic Status</string>
+    <string name="company_name">ViveScript Solutions LLC</string>
+    <string name="tagline">Express your love effortlessly every day</string>
+    <string name="today_status_header">Today’s Romantic Status</string>
+    <string name="action_copy">Copy</string>
+    <string name="action_share">Share</string>
+    <string name="action_generate">Craft Another</string>
+    <string name="action_favorite">Favorite</string>
+    <string name="action_share_card">Card View</string>
+    <string name="status_copied">Status copied to clipboard!</string>
+    <string name="favorites_title">Saved Favorites</string>
+    <string name="no_favorites_title">No favorites saved yet</string>
+    <string name="no_favorites_desc">Tap the heart icon on any romantic status to save it here for quick access.</string>
+    <string name="about_title">About Daily Romantic Status</string>
+    <string name="about_developer">Developed by ViveScript Solutions LLC</string>
+    <string name="about_copyright">© 2026 ViveScript Solutions LLC.</string>
+    <string name="about_license_notice">The source code is licensed under the MIT License. The app name, logo, icons, screenshots, trademarks, and associated branding are proprietary property of ViveScript Solutions LLC and are not licensed under the MIT License.</string>
+    <string name="privacy_guarantee">100% Offline &amp; Privacy-First: All statuses are generated on-device. No personal data or accounts required.</string>
+</resources>

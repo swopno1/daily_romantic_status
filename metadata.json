@@ -1,0 +1,6 @@
+{
+  "name": "Daily Romantic Status",
+  "description": "A lightweight offline-first daily romantic social media status and caption generator.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
