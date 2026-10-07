@@ -22,11 +22,13 @@ Published and developed by **ViveScript Solutions LLC**.
 
 ---
 
-## 📱 Screenshots
+## 📱 Screenshots & Store Assets
 
-| Today's Pick | Mood Filter | Favorites Sheet | Card Share Dialog |
+| Today's Pick (Mobile) | Moods & AI Craft | Saved Favorites & Card | 10-inch Tablet Layout |
 |:---:|:---:|:---:|:---:|
-| *(Main Screen Hero Card)* | *(Sweet, Poetic, Flirty)* | *(Saved Love Quotes)* | *(Social Media Post Card)* |
+| `store_assets/screenshots/mobile/screenshot_1_hero_1080x1920.png` | `store_assets/screenshots/mobile/screenshot_2_categories_1080x1920.png` | `store_assets/screenshots/mobile/screenshot_3_favorites_1080x1920.png` | `store_assets/screenshots/tablet/screenshot_tablet_10inch_1920x1440.png` |
+
+All store graphics, including the **512×512 App Icon** (`store_assets/icon/app_icon_512x512.png`), **1024×500 Feature Graphic** (`store_assets/feature_graphic/feature_graphic_1024x500.png`), and tablet/mobile screenshots, are documented in [`DESIGN_ASSETS.md`](DESIGN_ASSETS.md).
 
 ---
 

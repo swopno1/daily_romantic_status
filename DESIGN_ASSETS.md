@@ -21,70 +21,60 @@ Copyright: © 2026 ViveScript Solutions LLC. All rights reserved.
 
 ---
 
-## 2. App Launcher Icon
+## 2. Google Play Store Graphics Catalog
 
-### Specifications
-* **Adaptive Canvas Size:** 108dp × 108dp
-* **Safe Zone:** 66dp diameter centered
-* **Background Layer:** Solid `#831843` (`ic_launcher_background.xml`)
-* **Foreground Layer:** Glowing romantic heart & feather quill symbol (`ic_launcher_foreground.xml`)
-* **Raster Fallbacks:**
-  * `mipmap-mdpi`: 48 × 48 px (PNG32)
-  * `mipmap-hdpi`: 72 × 72 px (PNG32)
-  * `mipmap-xhdpi`: 96 × 96 px (PNG32)
-  * `mipmap-xxhdpi`: 144 × 144 px (PNG32)
-  * `mipmap-xxxhdpi`: 192 × 192 px (PNG32)
-  * High-res Play Store Icon: 512 × 512 px 32-bit PNG with alpha
+All production graphic assets have been generated, sized, and saved into the `store_assets/` folder ready for direct upload to Google Play Console:
 
----
+### 2.1 High-Resolution App Icon (512 × 512 px)
+* **Path:** `store_assets/icon/app_icon_512x512.png`
+* **Format:** 32-bit PNG with alpha
+* **Dimensions:** 512 × 512 px
+* **Visual:** Glowing romantic heart intertwined with sparkles and feather quill on a solid `#831843` crimson background.
 
-## 3. Google Play Store Feature Graphic
+### 2.2 Google Play Feature Graphic (1024 × 500 px)
+* **Path:** `store_assets/feature_graphic/feature_graphic_1024x500.png`
+* **Format:** 24-bit PNG (no alpha)
+* **Dimensions:** 1024 × 500 px
+* **Visual:** Deep crimson gradient background with glowing 3D heart, golden sparkles, and luxury card banner reading *“Daily Romantic Status — Express Love Effortlessly”*.
 
-* **Required Dimensions:** **1024 px width × 500 px height**
-* **File Format:** 24-bit PNG or JPEG (no alpha)
-* **File Size Limit:** 1 MB
-* **Visual Composition:**
-  * **Background:** Deep crimson wine gradient (`#831843` to `#4C0519`) with soft sparkling celestial stars.
-  * **Focal Element (Left/Center):** Glowing 3D floating quote card displaying:  
-    *“In a room full of art, I would still stare at you.”* in elegant *Playfair Display* typography.
-  * **Badge:** Rounded pill reading: *“Daily Romantic Status”* with subtle gold border.
-  * **Tagline:** *“Fresh Romantic Posts & Captions Every Single Day”*
-  * **Company Watermark:** *ViveScript Solutions LLC* in bottom-right corner.
+### 2.3 Mobile Phone Screenshots (1080 × 1920 px, 9:16 Portrait)
+* **Screenshot 1 (Hero / Today's Pick):**
+  * **Path:** `store_assets/screenshots/mobile/screenshot_1_hero_1080x1920.png`
+  * **Visual:** Main screen with today's featured romantic status, quotation marks, date header, and Copy/Share buttons.
+* **Screenshot 2 (Categories & AI Craft):**
+  * **Path:** `store_assets/screenshots/mobile/screenshot_2_categories_1080x1920.png`
+  * **Visual:** Mood filter chips (Sweet, Poetic, Flirty, Morning & Night), "Craft Another Status" action button, and trending hashtags.
+* **Screenshot 3 (Saved Favorites & Social Story Card):**
+  * **Path:** `store_assets/screenshots/mobile/screenshot_3_favorites_1080x1920.png`
+  * **Visual:** Offline Saved Favorites sheet with bookmarked love quotes and social media story card preview.
 
----
-
-## 4. Google Play Store Screenshots Plan
-
-### Dimensions
-* **Standard Phone:** 1080 × 2400 px (9:16 portrait)
-* Minimum 4 screenshots covering the critical user journey:
-
-### Screenshot 1: Today’s Pick (Hero Screen)
-* **Headline:** *"Today's Love Post, Ready in Seconds"*
-* **Visual:** Main screen with today's featured romantic status, date header, and highlighted "Copy" button.
-
-### Screenshot 2: 6 Mood Categories
-* **Headline:** *"Find the Right Words for Every Feeling"*
-* **Visual:** Category chips highlighted (Sweet & Tender, Deep & Poetic, Playful & Cute, Morning & Night, Long Distance).
-
-### Screenshot 3: One-Tap Copy & Share
-* **Headline:** *"Copy & Share Directly to WhatsApp & Instagram"*
-* **Visual:** Action buttons with tactile feedback toast and active system share sheet preview.
-
-### Screenshot 4: Saved Favorites
-* **Headline:** *"Keep Your Favorite Quotes Forever"*
-* **Visual:** The offline Saved Favorites sheet showing customized bookmarked quotes.
-
-### Screenshot 5: Social Card Preview
-* **Headline:** *"Aesthetic Cards for Instagram Stories"*
-* **Visual:** The story card modal preview with elegant dark crimson typography.
+### 2.4 Tablet Screenshots (7-inch & 10-inch)
+* **Tablet 10-inch (1920 × 1440 px):**
+  * **Path:** `store_assets/screenshots/tablet/screenshot_tablet_10inch_1920x1440.png`
+  * **Visual:** High-resolution expanded landscape layout showing responsive romantic card presentation and mood navigation.
+* **Tablet 7-inch (1280 × 800 px):**
+  * **Path:** `store_assets/screenshots/tablet/screenshot_tablet_7inch_1280x800.png`
+  * **Visual:** 7-inch tablet layout optimized for compact tablets and foldables.
 
 ---
 
-## 5. Export & Asset Checklist
+## 3. In-App Android Adaptive Launcher Icons
 
-- [x] Adaptive icon foreground & background XMLs configured in `app/src/main/res/drawable/`
-- [x] Raster launcher PNGs generated for mdpi, hdpi, xhdpi, xxhdpi, xxxhdpi
-- [x] Round launcher PNGs generated with circular transparency masking
-- [x] Default template `.webp` launcher files removed
-- [x] Bundled Google Font `playfair_display.ttf` installed in `res/font/`
+Configured inside `app/src/main/res/`:
+* `res/drawable/ic_launcher_background.xml` (Solid `#831843`)
+* `res/drawable/ic_launcher_foreground.xml` (Centered 66dp within 108dp canvas)
+* `res/mipmap-mdpi/ic_launcher.png` & `ic_launcher_round.png` (48 × 48 px)
+* `res/mipmap-hdpi/ic_launcher.png` & `ic_launcher_round.png` (72 × 72 px)
+* `res/mipmap-xhdpi/ic_launcher.png` & `ic_launcher_round.png` (96 × 96 px)
+* `res/mipmap-xxhdpi/ic_launcher.png` & `ic_launcher_round.png` (144 × 144 px)
+* `res/mipmap-xxxhdpi/ic_launcher.png` & `ic_launcher_round.png` (192 × 192 px)
+
+---
+
+## 4. Verification & Status Checklist
+
+- [x] 512×512 PNG app icon generated in `store_assets/icon/`
+- [x] 1024×500 PNG feature graphic generated in `store_assets/feature_graphic/`
+- [x] 3 Mobile screenshots (1080×1920) generated in `store_assets/screenshots/mobile/`
+- [x] 2 Tablet screenshots (10-inch and 7-inch) generated in `store_assets/screenshots/tablet/`
+- [x] Adaptive icon XMLs and mipmap rasters present in `app/src/main/res/`

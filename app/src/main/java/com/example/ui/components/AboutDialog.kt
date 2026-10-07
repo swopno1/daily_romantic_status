@@ -63,7 +63,7 @@ fun AboutDialog(
                     .verticalScroll(scrollState)
             ) {
                 Text(
-                    text = "Version 2.0.0",
+                    text = "Version 3.0.0",
                     style = MaterialTheme.typography.labelSmall,
                     color = MaterialTheme.colorScheme.onSurfaceVariant
                 )

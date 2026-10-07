@@ -2,6 +2,17 @@
 
 All notable changes to **Daily Romantic Status** are documented in this file.
 
+## [3.0.0] - 2026-10-07
+
+### Added
+- **Full Store Graphics Package (`store_assets/`):**
+  - High-resolution 512×512 PNG app icon (`store_assets/icon/app_icon_512x512.png`).
+  - Google Play 1024×500 PNG feature graphic (`store_assets/feature_graphic/feature_graphic_1024x500.png`).
+  - 3 High-resolution 1080×1920 mobile screenshots covering Today's Pick, Mood Categories & AI Craft, and Saved Favorites & Social Story Cards.
+  - 2 Tablet screenshots covering 10-inch landscape (1920×1440) and 7-inch tablet (1280×800) layouts.
+- **Documentation Updates:** Comprehensive asset catalog in `DESIGN_ASSETS.md` and `README.md`.
+- **Version Bump:** Updated `versionCode` to 3 and `versionName` to 3.0.
+
 ## [2.0.0] - 2026-10-07
 
 ### Added
