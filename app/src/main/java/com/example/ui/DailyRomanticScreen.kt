@@ -81,7 +81,8 @@ import java.util.Locale
 @Composable
 fun DailyRomanticScreen(
     viewModel: RomanticViewModel,
-    modifier: Modifier = Modifier
+    modifier: Modifier = Modifier,
+    onTriggerCraftAd: ((onCompleted: () -> Unit) -> Unit) = { it() }
 ) {
     val context = LocalContext.current
     val currentStatus by viewModel.currentStatus.collectAsStateWithLifecycle()
@@ -226,14 +227,14 @@ fun DailyRomanticScreen(
                         onCopy = { viewModel.copyToClipboard(context, currentStatus) },
                         onShare = { viewModel.shareStatus(context, currentStatus) },
                         onToggleFavorite = { viewModel.toggleFavorite(currentStatus) },
-                        onCardView = { viewModel.openCardShare() }
+                        onCardView = { onTriggerCraftAd { viewModel.openCardShare() } }
                     )
 
                     Spacer(modifier = Modifier.height(16.dp))
 
                     // Primary Craft / Generate Action Button
                     Button(
-                        onClick = { viewModel.generateNext() },
+                        onClick = { onTriggerCraftAd { viewModel.generateNext() } },
                         enabled = !isGenerating,
                         modifier = Modifier
                             .fillMaxWidth()

@@ -68,4 +68,11 @@ class RomanticEngineTest {
         assertTrue(generated.text.isNotBlank())
         assertFalse(generated.tags.isEmpty())
     }
+
+    @Test
+    fun adConfig_containsValidUnitIds() {
+        assertEquals("ca-app-pub-5222053984568989~5680583880", com.example.ad.AdConfig.APP_ID)
+        assertEquals("ca-app-pub-5222053984568989/2859724289", com.example.ad.AdConfig.BANNER_AD_UNIT_ID)
+        assertEquals("ca-app-pub-5222053984568989/9233560948", com.example.ad.AdConfig.INTERSTITIAL_AD_UNIT_ID)
+    }
 }

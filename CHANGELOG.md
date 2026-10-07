@@ -2,6 +2,14 @@
 
 All notable changes to **Daily Romantic Status** are documented in this file.
 
+## [2.0.0] - 2026-10-07
+
+### Added
+- **Production Google AdMob Integration:** Integrated Google Mobile Ads SDK with App ID (`ca-app-pub-5222053984568989~5680583880`).
+- **Banner Ad Placement:** Standard 320x50 Banner 1 ad unit (`ca-app-pub-5222053984568989/2859724289`) in bottom navigation-safe container.
+- **Interstitial Ad Placement:** Interstitial 1 ad unit (`ca-app-pub-5222053984568989/9233560948`) managed by `InterstitialAdManager` with background preloading and policy-compliant frequency capping.
+- **Version Bump:** Updated `versionCode` to 2 and `versionName` to 2.0.
+
 ## [1.0.0] - 2026-10-07
 
 ### Added

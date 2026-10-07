@@ -138,7 +138,7 @@ app/src/main/
 * **No Personal Data Collected:** The app does not collect, transmit, or store names, emails, contacts, location, or device identifiers.
 * **No Account Required:** Ready to use immediately upon installation.
 * **Offline-First:** All content is generated locally on your device.
-* **Advertising:** Google AdMob is integrated using Google's official test unit IDs for development and review. Test IDs do not collect production profile data.
+* **Advertising:** Google AdMob is integrated using Google Mobile Ads SDK with ViveScript Solutions LLC production App ID and ad unit placements (Banner 1 and Interstitial 1), adhering strictly to Google AdMob placement policies.
 
 ---
 

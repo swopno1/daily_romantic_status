@@ -1,37 +1,47 @@
 package com.example.ad
 
 /**
- * Centralized AdMob Configuration.
+ * Centralized AdMob Configuration for Daily Romantic Status.
  *
- * Current State: Configured with official Google AdMob test IDs for development
- * and Play Store review verification.
- *
- * TO SWITCH TO PRODUCTION:
- * 1. Set [IS_TEST_ADS] = false
- * 2. Replace [BANNER_AD_UNIT_ID] with the production banner ad unit ID from your AdMob console.
- * 3. Update the `com.google.android.gms.ads.APPLICATION_ID` in AndroidManifest.xml.
+ * Configured with ViveScript Solutions LLC production ad units:
+ * - App ID: ca-app-pub-5222053984568989~5680583880
+ * - Banner 1: ca-app-pub-5222053984568989/2859724289
+ * - Interstitial 1: ca-app-pub-5222053984568989/9233560948
  */
 object AdConfig {
-    /** Official Google AdMob Test App ID */
-    const val TEST_APP_ID = "ca-app-pub-3940256099942544~3347511713"
+    /** Production AdMob App ID */
+    const val APP_ID = "ca-app-pub-5222053984568989~5680583880"
 
-    /** Official Google AdMob Test Banner Unit ID */
+    /** Production Banner Ad Unit ID (Banner 1) */
+    const val BANNER_AD_UNIT_ID = "ca-app-pub-5222053984568989/2859724289"
+
+    /** Production Interstitial Ad Unit ID (Interstitial 1) */
+    const val INTERSTITIAL_AD_UNIT_ID = "ca-app-pub-5222053984568989/9233560948"
+
+    /** Google Official Test Banner ID (for local testing without invalid clicks) */
     const val TEST_BANNER_AD_UNIT_ID = "ca-app-pub-3940256099942544/6300978111"
 
-    /** Set to false when deploying with registered production AdMob keys */
-    const val IS_TEST_ADS = true
+    /** Google Official Test Interstitial ID (for local testing) */
+    const val TEST_INTERSTITIAL_AD_UNIT_ID = "ca-app-pub-3940256099942544/1033173712"
+
+    /**
+     * Set to false to serve real production ads.
+     * When true, serves Google's official test ads to protect account from policy flags during development.
+     */
+    var useTestAds: Boolean = false
 
     /** Global ad display toggle */
     const val ADS_ENABLED = true
 
     /**
-     * Resolves the active banner unit ID based on current environment mode.
+     * Resolves active banner unit ID based on test mode setting.
      */
     val bannerAdUnitId: String
-        get() = if (IS_TEST_ADS) {
-            TEST_BANNER_AD_UNIT_ID
-        } else {
-            // Production Ad Unit ID placeholder for ViveScript Solutions LLC
-            "ca-app-pub-XXXXXXXXXXXXXXXX/YYYYYYYYYY"
-        }
+        get() = if (useTestAds) TEST_BANNER_AD_UNIT_ID else BANNER_AD_UNIT_ID
+
+    /**
+     * Resolves active interstitial unit ID based on test mode setting.
+     */
+    val interstitialAdUnitId: String
+        get() = if (useTestAds) TEST_INTERSTITIAL_AD_UNIT_ID else INTERSTITIAL_AD_UNIT_ID
 }

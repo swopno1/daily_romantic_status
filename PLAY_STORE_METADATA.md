@@ -81,7 +81,7 @@ Users are looking for quick, high quality, ready-to-copy romantic lines that sou
 * **Primary Category:** Lifestyle (or Entertainment)
 * **Tags:** Lifestyle, Quotes, Romance, Social, Entertainment
 * **Target Audience:** Ages 13 and up
-* **Pricing:** Free (Ad-supported test configuration)
+* **Pricing:** Free (Ad-supported: Banner & Interstitial)
 
 ---
 

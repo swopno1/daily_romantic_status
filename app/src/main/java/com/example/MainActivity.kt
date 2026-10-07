@@ -8,9 +8,11 @@ import androidx.activity.viewModels
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.Surface
 import androidx.compose.ui.Modifier
+import com.example.ad.InterstitialAdManager
 import com.example.ui.DailyRomanticScreen
 import com.example.ui.theme.DailyRomanticStatusTheme
 import com.example.ui.viewmodel.RomanticViewModel
+import com.google.android.gms.ads.MobileAds
 
 class MainActivity : ComponentActivity() {
 
@@ -19,10 +21,22 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
+
+        // Initialize Google Mobile Ads SDK
+        MobileAds.initialize(this) {
+            // Preload the first interstitial ad as soon as SDK is initialized
+            InterstitialAdManager.loadAd(this)
+        }
+
         setContent {
             DailyRomanticStatusTheme {
                 Surface(modifier = Modifier.fillMaxSize()) {
-                    DailyRomanticScreen(viewModel = viewModel)
+                    DailyRomanticScreen(
+                        viewModel = viewModel,
+                        onTriggerCraftAd = { onDone ->
+                            InterstitialAdManager.onUserCraftAction(this, onDone)
+                        }
+                    )
                 }
             }
         }
